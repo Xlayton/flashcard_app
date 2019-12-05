@@ -1,0 +1,7 @@
+{
+    "nav": [
+        ["Home", "/"],
+        ["Manage Cards", "/manage"],
+        ["View Cards", "/cards"]
+    ]
+}

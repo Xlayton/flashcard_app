@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        meta(http-equiv="X-UA-Compatible", content="ie=edge")
+        link(rel="stylesheet" type="text/css" href="./css/main.css")
+        link(href="https://fonts.googleapis.com/css?family=Poppins|Raleway&display=swap" rel="stylesheet")
+        block ps_head
+    body
+        nav(class="nav-bar")
+            for ele in nav_content
+                a(class="nav-link" href=ele[1])
+                    li(class="nav-ele") #{ele[0]}
+        block content

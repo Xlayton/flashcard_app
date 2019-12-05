@@ -1,0 +1,15 @@
+extends layout
+block ps_head
+    title Add a Card
+block content
+    h1(class="title") Manage Flash Cards
+    section(class="add_card")
+        h2(class="sub_title") Add Card
+        input(class="form_field" type="text" id="question" placeholder="Question" maxlength=100)
+        input(class="form_field" type="text" id="answer" placeholder="Answer" maxlength=100)
+        button(class="submit_btn btn") Add Card
+    section(class="remove_card")
+        h2(class="sub_title") Remove Card
+        article(class="card_display" id="cardRemoval")
+    script(src="./js/manage.js")
+    script(src="./js/flip.js")
